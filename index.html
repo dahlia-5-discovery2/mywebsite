@@ -1,50 +1,37 @@
-<html><body>
-<style type='text/css'>
-    svg {
-        overflow: hidden;
-    }
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    .node rect {
-        stroke: #333;
-        stroke-width: 1.5px;
-        fill: #fff;
-    }
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    .edgeLabel rect {
-        fill: #fff;
-    }
+    <title>DERBYGIRL by dahlia-5-discovery2</title>
+  </head>
 
-    .edgePath {
-        stroke: #333;
-        stroke-width: 1.5px;
-        fill: none;
-    }
-</style>
-<script type='text/javascript' src="http://d3js.org/d3.v3.js"></script>
-<script type='text/javascript' src="http://cpettitt.github.io/project/dagre-d3/v0.1.5/dagre-d3.min.js"></script>
-<script type='text/javascript' src="http://cpettitt.github.io/project/graphlib-dot/v0.4.10/graphlib-dot.min.js"></script>
-<script type='text/javascript'>
-    window.onload=function(){
-        // Parse the DOT syntax into a graphlib object.
-        var g = graphlibDot.parse(
-            'digraph {\n' +
-            '    a -> b;\n' +
-            '    }'
-        )
+  <body>
 
-        // Render the graphlib object using d3.
-        var renderer = new dagreD3.Renderer();
-        renderer.run(g, d3.select("svg g"));
+    <header>
+      <div class="container">
+        <h1>DERBYGIRL</h1>
+        <h2>Web site that shows how to use gh-pages</h2>
 
+        <section id="downloads">
+          <a href="https://github.com/dahlia-5-discovery2/mywebsite/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/dahlia-5-discovery2/mywebsite/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/dahlia-5-discovery2/mywebsite" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
 
-        // Optional - resize the SVG element based on the contents.
-        var svg=document.querySelector('#graphContainer');
-        var bbox=svg.getBBox();
-        svg.style.width=bbox.width + 40.0 + "px";
-        svg.style.height=bbox.height + 40.0 + "px";
-    }
-</script>
-<svg id="graphContainer">
-<g/>
-</svg>
-</body></html>
+    <div class="container">
+      <section id="main_content">
+        <p>My name is fish bone and I play Derby</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
